@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "lib": ["ES2022"],
+    "esModuleInterop": true,
+    "strict": true,
+    "types": ["vitest/globals", "node"]
+  },
+
+  "include": ["src/**/*", "dist/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
