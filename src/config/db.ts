@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-
+import dotenv from "dotenv";
+dotenv.config();
 //  * * Connects to MongoDB database using Mongoose.
 //  * * Exits the process if connection fails.
 //  */
