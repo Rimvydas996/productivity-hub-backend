@@ -1,26 +1,22 @@
 {
+  "name": "express",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
   "dependencies": {
-    "express": "^5.1.0",
-    "mongoose": "^9.0.0",
-    "socket.io": "^4.8.1"
+    "express": "5.1.0",
+    "mongoose": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
-    "nodemon": "^3.1.11",
-    "typescript": "^5.9.3"
-  },
-  "name": "productivity-hub-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+    "@types/express": "5.0.0",
+    "@types/node": "20.11.17",
+    "typescript": "5.8.3",
+    "vitest": "^4.0.15"
+  }
 }
