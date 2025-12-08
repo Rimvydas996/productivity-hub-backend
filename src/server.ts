@@ -1,6 +1,7 @@
 import express from "express";
 import { connectToDatabase } from "./config/db.js";
 import router from "./routes/task.routes.js";
+import auth from "./routes/auth.routes.js";
 
 //* Initialize Express application
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 
 //* Use task routes
 app.use(router);
+app.use(auth);
 
 //* Health check endpoint
 app.get("/", (req: any, res: any) => {
